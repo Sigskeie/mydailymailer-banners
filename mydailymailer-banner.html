@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>My Daily Mailer Banner 468x60</title>
+<style>
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes pulse {
+  0%,100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.9; }
+}
+body {
+  margin:0;
+  background:#0f172a;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+.banner {
+  width:468px;
+  height:60px;
+  border-radius:10px;
+  overflow:hidden;
+  position:relative;
+  font-family:Arial,Helvetica,sans-serif;
+  box-shadow:0 0 8px rgba(0,0,0,0.4);
+}
+.inner {
+  width:100%;
+  height:100%;
+  background:linear-gradient(90deg,#0ea5a4,#0284c7,#0f172a);
+  background-size:300% 300%;
+  animation:gradientShift 6s ease infinite;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 16px;
+  box-sizing:border-box;
+  color:#fff;
+}
+.btn {
+  background:#fff;
+  color:#0f172a;
+  padding:6px 10px;
+  border-radius:6px;
+  font-weight:700;
+  animation:pulse 1.6s infinite;
+}
+</style>
+</head>
+<body>
+  <a href="https://mydailymailer.com/?rid=111" target="_blank" title="Join My Daily Mailer">
+    <div class="banner">
+      <div class="inner">
+        <div style="font-size:16px;font-weight:700;">My Daily Mailer</div>
+        <div style="font-size:13px;color:#d1fae5;">Send • Engage • Earn</div>
+        <div class="btn">Join Now</div>
+      </div>
+    </div>
+  </a>
+</body>
+</html>
